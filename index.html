@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kiziba Kingdom</title>
+  <style>
+    /* Add this style to remove underlines from all links */
+    a {
+      text-decoration: none;
+    }
+    /* Style for feature cards to maintain appearance */
+    .feature-card {
+      display: block;
+      color: inherit; /* Keeps text color consistent */
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Navigation -->
+   <script>
+  function toggleDrawer() {
+    const drawer = document.querySelector('.drawer');
+    drawer.classList.toggle('open');
+    document.body.classList.toggle('drawer-open');
+  }
+</script>
+
+<header class="navbar">
+  <div class="logo">👑 KINGDOM</div>
+
+  <!-- Hamburger (shown only on small screens) -->
+  <div class="hamburger" onclick="toggleDrawer()">☰</div>
+
+  <!-- Navigation links (hidden on mobile) -->
+  <nav class="nav-links">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="culture.html">Culture</a></li>
+      <li><a href="legacy.html">Photo dump</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Drawer menu (mobile only) -->
+<div id="drawer" class="drawer">
+  <a href="index.html" onclick="closeDrawer()">Home</a>
+  <a href="history.html" onclick="closeDrawer()">History</a>
+  <a href="culture.html" onclick="closeDrawer()">Culture</a>
+  <a href="legacy.html" onclick="closeDrawer()">Photo dump</a>
+  <a href="contact.html" onclick="closeDrawer()">Contact</a>
+</div>
+
+<!-- Hero Section -->
+<main class="hero-section">
+  <div class="icon-circle">👑</div>
+  <h1>Welcome to <span>Kiziba Kingdom</span></h1>
+  <p>Discover the heritage, languages, and timeless traditions of the magnificent Kiziba Kingdom</p>
+</main>
+
+<!-- Feature Section -->
+<section class="features">
+  <a href="history.html" class="feature-card">
+    <div class="icon">⭐</div>
+    <h3>Rich History</h3>
+    <p>Explore centuries of royal legacy<br>and ancient traditions</p>
+  </a>
+  <a href="culture.html" class="feature-card">
+    <div class="icon">🌐</div>
+    <h3>Vibrant Culture</h3>
+    <p>Experience the languages, arts,<br>and customs of our people</p>
+  </a>
+  <a href="legacy.html" class="feature-card">
+    <div class="icon">👑</div>
+    <h3>Lasting Legacy</h3>
+    <p>Witness how our heritage shapes<br>the future</p>
+  </a>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <h2>Join Our Journey Through Time</h2>
+  <p>Connect with us to learn more about the Kiziba Kingdom and its enduring story</p>
+  <a href="contact.html" class="cta-button">Get in Touch</a>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Kiziba Kingdom. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

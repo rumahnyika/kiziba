@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The History of Kiziba</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Drawer Toggle Script -->
+<script>
+  function toggleDrawer() {
+    const drawer = document.querySelector('.drawer');
+    drawer.classList.toggle('open');
+    document.body.classList.toggle('drawer-open');
+  }
+  function closeDrawer() {
+    const drawer = document.querySelector('.drawer');
+    drawer.classList.remove('open');
+    document.body.classList.remove('drawer-open');
+  }
+</script>
+
+<!-- Navigation -->
+<header class="navbar">
+  <div class="logo">👑 KINGDOM</div>
+
+  <!-- Hamburger (mobile) -->
+  <div class="hamburger" onclick="toggleDrawer()">☰</div>
+
+  <!-- Navigation links (desktop) -->
+  <nav class="nav-links">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="history.html" class="active">History</a></li>
+      <li><a href="culture.html">Culture</a></li>
+      <li><a href="legacy.html">Legacy</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Drawer (mobile navigation) -->
+<div class="drawer">
+  <a href="index.html" onclick="closeDrawer()">Home</a>
+  <a href="history.html" onclick="closeDrawer()">History</a>
+  <a href="culture.html" onclick="closeDrawer()">Culture</a>
+  <a href="legacy.html" onclick="closeDrawer()">Photo dump</a>
+  <a href="contact.html" onclick="closeDrawer()">Contact</a>
+</div>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="icon-circle">📜</div>
+  <h1>The History of Kiziba</h1>
+  <p>Embark on a timeless journey through the centuries-old legacy of the Kiziba Kingdom — from its ancient roots nestled along the shores of Lake Victoria to its enduring influence in modern Tanzania. Traverse the rise of noble dynasties, witness the wisdom of legendary monarchs, and experience the cultural heartbeat of a kingdom that has shaped generations. The royal echoes of Kiziba still resonate today, a living testament to heritage, resilience, and pride.</p>
+</section>
+
+<!-- Origins and Establishment -->
+<section class="content-section">
+  <h2>Origins and Establishment</h2>
+  <p>
+    The Kiziba Kingdom was a precolonial monarchy of the Haya people, located in what is now the Kagera Region of northwestern Tanzania, near Lake Victoria, with influence extending into southwestern Uganda. It emerged in the 1400s as one of several Haya kingdoms, including Karagwe, Ihangiro, Kihanja, Bukara, Lesser Kyamtwara, Bugabo, and Missenye.
+  </p>
+  <p>
+    Kiziba was part of the Great Lakes Kingdoms. Unlike its neighbor, the Karagwe Kingdom, which was ruled by monarchs of the Hinda clan, Kiziba’s rulers belonged to the Bito (Babiito) clan, which also governed the Bunyoro Kingdom in Uganda. This made Kiziba distinct and closely linked with Bunyoro culturally and politically.
+  </p>
+</section>
+
+<!-- Political Structure -->
+<section class="content-section alt-background">
+  <h2>Political Structure and Key Rulers</h2>
+  <p>
+    The kings of Kiziba, titled <strong>Omukama</strong>, held significant power. King Mutahangarwa (1903–1916) was especially pivotal, commissioning the historical documentation of the kingdom through oral tradition. The result was the 1949 Kihaya-language book <em>Amakuru Ga Kiziba na Abakama Bamu</em>, a foundational text in Kiziba historiography.
+  </p>
+  <h3>Notable Rulers</h3>
+  <ul class="ruler-list">
+    <li><strong>King Mutahangarwa</strong> (1903–1916): Commissioned oral history documentation.</li>
+    <li><strong>King Nestor Lutinwa</strong> (1937–1972): Among the last monarchs before kingdoms were dissolved.</li>
+    <li><strong>Omukama Lutinwa Mutatembwa II</strong> (Current): Ceremonial leader preserving cultural heritage.</li>
+  </ul>
+</section>
+
+<!-- Timeline Section -->
+<section class="timeline-section">
+  <h2 class="timeline-title">Royal Timeline</h2>
+
+  <div class="timeline-entry">
+    <div class="timeline-card gradient-orange">
+      <div class="timeline-icon">🕰️</div>
+      <h3>Ancient Origins</h3>
+      <p class="timeline-year">15th Century</p>
+    </div>
+    <div class="timeline-text">
+      <h3>Foundation of the Kingdom</h3>
+      <p>
+        The Kiziba Kingdom was founded by visionary leaders who unified diverse clans into a prosperous and respected realm.
+      </p>
+    </div>
+  </div>
+
+  <div class="timeline-entry reverse">
+    <div class="timeline-text">
+      <h3>Era of Expansion</h3>
+      <p>
+        Through trade, diplomacy, and cultural growth, the Kiziba Kingdom reached new heights during this era.
+      </p>
+    </div>
+    <div class="timeline-card gradient-red">
+      <div class="timeline-icon">🛡️</div>
+      <h3>Golden Age</h3>
+      <p class="timeline-year">16th–18th Century</p>
+    </div>
+  </div>
+
+  <div class="timeline-entry">
+    <div class="timeline-card gradient-purple">
+      <div class="timeline-icon">👥</div>
+      <h3>Modern Era</h3>
+      <p class="timeline-year">19th Century – Present</p>
+    </div>
+    <div class="timeline-text">
+      <h3>Adaptation and Resilience</h3>
+      <p>
+        Despite colonial disruptions, Kiziba’s identity persisted. Today, its traditions live on through cultural celebrations and education.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Heritage Section -->
+<section class="heritage-section">
+  <h2 class="heritage-title">Preserving Our Heritage</h2>
+  <p class="heritage-text">
+    The legacy of the Kiziba Kingdom is alive. Through oral traditions, rituals, and community practices, we honor the past while shaping our future.
+  </p>
+  <div class="heritage-stats">
+    <div class="stat-box"><span>500+</span>Years of Legacy</div>
+    <div class="stat-box"><span>20+</span>Royal Families</div>
+    <div class="stat-box"><span>100+</span>Cultural Ceremonies</div>
+  </div>
+</section>
+
+<!-- Modern Leadership Section -->
+<section class="leader-profile">
+  <div class="ribbon">👑 Royal Lineage • Unity • Heritage</div>
+  <h2 class="leader-title">Meet Our Current Leader</h2>
+  <div class="leader-container">
+    <div class="leader-info">
+      <h3>Omukama Lutinwa Mutatembwa II</h3>
+      <p>
+        Omukama Lutinwa Mutatembwa II serves as a symbolic figurehead who works to protect and share the culture of the Haya people and the Kiziba Kingdom.
+      </p>
+      <ul class="leader-facts">
+        <li><strong>Born:</strong> December 05, 1962</li>
+        <li><strong>Reign Started:</strong> August 12, 2010</li>
+        <li><strong>Marital Status:</strong> Married – Proudly married to a devoted and graceful wife who stands as a pillar of strength and support.</li>
+
+        <li><strong>Children:</strong> Prince Lennox, Prince Lewis, Princess Eleslein</li>
+        <li><strong>Key Focus:</strong> Cultural Preservation, Unity, Intergenerational Traditions, Indigenous Knowledge, Language Protection, Ritual Continuity, Artistic Heritage</li>
+
+      </ul>
+    </div>
+    <div class="leader-gallery">
+      <img src="images/mutah5.jpeg" alt="Omukama Mutatembwa II - Portrait" />
+      <img src="images/muta4.jpeg" alt="Cultural Ceremony" />
+      <img src="images/muta3.jpeg" alt="With Community" />
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

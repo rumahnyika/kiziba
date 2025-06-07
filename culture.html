@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Culture & Traditions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Drawer Toggle Script -->
+<script>
+  function toggleDrawer() {
+    const drawer = document.querySelector('.drawer');
+    drawer.classList.toggle('open');
+    document.body.classList.toggle('drawer-open');
+  }
+  function closeDrawer() {
+    const drawer = document.querySelector('.drawer');
+    drawer.classList.remove('open');
+    document.body.classList.remove('drawer-open');
+  }
+</script>
+
+<!-- Top Navigation Bar -->
+<header class="navbar">
+  <div class="logo"><span class="logo-circle">K</span> <strong>KINGDOM</strong></div>
+
+  <!-- Hamburger Icon for Mobile -->
+  <div class="hamburger" onclick="toggleDrawer()">☰</div>
+
+  <!-- Desktop Navigation Links -->
+  <nav class="nav-links">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="culture.html" class="active">Culture</a></li>
+      <li><a href="legacy.html">Legacy</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Mobile Drawer Navigation -->
+<div class="drawer">
+  <a href="index.html" onclick="closeDrawer()">Home</a>
+  <a href="history.html" onclick="closeDrawer()">History</a>
+  <a href="culture.html" onclick="closeDrawer()">Culture</a>
+  <a href="legacy.html" onclick="closeDrawer()">Photo dump</a>
+  <a href="contact.html" onclick="closeDrawer()">Contact</a>
+</div>
+
+<!-- Hero Section -->
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="icon-circle">🎨</div>
+  <h1>Culture & Traditions</h1>
+  <p>Experience the vibrant tapestry of languages, arts, and customs that define our kingdom. From ancient rituals to modern expressions of identity, our culture is alive in every heartbeat of Kiziba.</p>
+</section>
+
+<!-- Languages Section -->
+<section class="languages">
+  <div class="left-panel">
+    <h2>Languages of Kiziba</h2>
+    <p>The Kiziba Kingdom is home to multiple languages that reflect our rich linguistic heritage. Our primary language, Rukiziba, serves as the royal tongue, while several regional dialects contribute to our cultural diversity.</p>
+    <p>Language is more than communication—it’s a vessel of history, proverbs, and poetry. Oral storytelling thrives in Kiziba, where griots pass wisdom from one generation to the next.</p>
+    <ul class="language-list">
+      <li><span class="icon-globe">&#127760;</span> Rukiziba (Royal Language)</li>
+      <li><span class="icon-globe">&#127760;</span> Kiswahili (Trade Language)</li>
+      <li><span class="icon-globe">&#127760;</span> Regional Dialects</li>
+      <li><span class="icon-globe">&#127760;</span> Arabic & French (Historical Influences)</li>
+    </ul>
+  </div>
+  <div class="right-card">
+    <h3>Cultural Diversity</h3>
+    <p>Our kingdom celebrates linguistic diversity as a source of strength and unity. Schools often teach multiple languages, and songs blend tongues to reach all generations.</p>
+    <div class="language-count">
+      <span class="number">5+</span>
+      <p>Languages Spoken</p>
+    </div>
+  </div>
+</section>
+
+<!-- Traditions Section -->
+<section class="traditions">
+  <div class="card">
+    <div class="icon">&#127926;</div>
+    <h3>Traditional Music</h3>
+    <p>Our musical heritage includes ceremonial drums, royal chants, and folk songs that tell the stories of our ancestors and celebrate life's milestones.</p>
+    <p>Instruments like the "engalabi" drum and the "endongo" lyre are central to performances at births, weddings, and coronations.</p>
+  </div>
+  <div class="card">
+    <div class="icon">&#127912;</div>
+    <h3>Arts & Crafts</h3>
+    <p>Master artisans create intricate basketry, pottery, and textiles using techniques passed down through generations, each piece telling a unique story.</p>
+    <p>Motifs often depict historical battles, mythological creatures, and agricultural life. Each region has its own signature colors and weaving styles.</p>
+  </div>
+  <div class="card">
+    <div class="icon">&#10084;&#65039;</div>
+    <h3>Ceremonies</h3>
+    <p>Sacred rituals and festive celebrations mark important occasions, strengthening community bonds and honoring our spiritual traditions.</p>
+    <p>From the "Imbaga" initiation rites to the annual "Festival of Spirits," ceremonies reflect the kingdom’s deep reverence for ancestry and identity.</p>
+  </div>
+</section>
+
+<!-- Core Cultural Values Section -->
+<section class="core-values">
+  <h2>Core Cultural Values</h2>
+  <div class="values-grid">
+    <div class="value-item orange">
+      <div class="circle">U</div>
+      <h3>Unity</h3>
+      <p>Ubuntu - we are because we are together. This value promotes solidarity, collective well-being, and mutual upliftment within the kingdom.</p>
+    </div>
+    <div class="value-item red">
+      <div class="circle">R</div>
+      <h3>Respect</h3>
+      <p>Honor for elders, nature, and ancestors. Respect guides our actions in daily life, ceremonies, and governance, ensuring harmony.</p>
+    </div>
+    <div class="value-item purple">
+      <div class="circle">W</div>
+      <h3>Wisdom</h3>
+      <p>Learning from tradition and experience. Proverbs, storytelling, and council gatherings help preserve and pass down knowledge.</p>
+    </div>
+    <div class="value-item green">
+      <div class="circle">C</div>
+      <h3>Community</h3>
+      <p>Collective responsibility and support. Communal farming, shared festivals, and crisis solidarity define our social fabric.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Living Culture Section -->
+<section class="living-culture">
+  <h2>A Living Culture</h2>
+  <p>Our culture is not a museum piece—it's a vibrant, evolving tapestry that adapts to modern times while honoring ancient wisdom. Each generation adds new threads to this beautiful pattern, ensuring our traditions remain relevant and meaningful for future generations.</p>
+  <p>Urban youth are revitalizing traditions through music, digital storytelling, and art. Cultural centers and village schools collaborate to bridge elders and youth, ensuring continuity of heritage in the digital age.</p>
+</section>
+
+
+</body>
+</html>

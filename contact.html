@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Kiziba Kingdom</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script>
+    function toggleDrawer() {
+      const drawer = document.querySelector('.drawer');
+      drawer.classList.toggle('open');
+      document.body.classList.toggle('drawer-open');
+    }
+    function closeDrawer() {
+      const drawer = document.querySelector('.drawer');
+      drawer.classList.remove('open');
+      document.body.classList.remove('drawer-open');
+    }
+  </script>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo"><span class="logo-circle">K</span> <strong>KINGDOM</strong></div>
+    <div class="hamburger" onclick="toggleDrawer()">☰</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="legacy.html">Legacy</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="drawer">
+    <a href="index.html" onclick="closeDrawer()">Home</a>
+    <a href="history.html" onclick="closeDrawer()">History</a>
+    <a href="culture.html" onclick="closeDrawer()">Culture</a>
+    <a href="legacy.html" onclick="closeDrawer()">Photo dump</a>
+    <a href="contact.html" onclick="closeDrawer()">Contact</a>
+  </div>
+  <!-- Navigation -->
+  
+
+  <!-- Hero Section -->
+  <section class="connect-section">
+    <div class="icon">&#9993;</div>
+    <h1>Connect With Us</h1>
+    <p>Reach out to learn more about the Kiziba Kingdom or to share your thoughts</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="left">
+      <h2>Get in Touch</h2>
+      <p>
+        We welcome visitors, researchers, and anyone interested in learning more about our kingdom's rich heritage. 
+        Whether you're planning a visit, seeking insights, or contributing to our archive, we're here to connect.
+      </p>
+
+      <div class="contact-details">
+        <h3>Reach Us</h3>
+        <p><strong><i class="fas fa-envelope"></i> Email:</strong> 1738rumanyika@gmail.com</p>
+        <p><strong><i class="fas fa-phone"></i> Phone:</strong> +255 694675764</p>
+        <p><strong><i class="fab fa-whatsapp"></i> WhatsApp:</strong> <a href="https://wa.me/255746210442" target="_blank">+255 746 210 442</a></p>
+        <p><strong><i class="fab fa-instagram"></i> Instagram:</strong> <a href="https://instagram.com/mutasingwaa" target="_blank">@mutasingwaa</a></p>
+      </div>
+
+      <div class="founder-info">
+  <img src="images/lewizy.jpeg" alt="Founder Lewis Mutasingwaa" class="founder-image" />
+  <h3>Website Founder</h3>
+  <p><strong>Mutasingwaa .C.L.</strong><br />Founder of Kiziba Kingdom Digital Archive</p>
+
+  <button class="read-more-btn" onclick="toggleBio()">Read More</button>
+  <div class="bio-content" id="bio" style="display: none;">
+  <p style="line-height: 1.8; font-size: 18px;">
+  Lewis Mutasingwaa is a passionate Tanzanian developer with a deep love for culture, history, and the power of technology to make a difference. Without access to the latest tools or formal guidance, he began his journey with nothing but curiosity, resilience, and the steady encouragement of his loving father—who believed in him even when the path was unclear.
+  <br><br>
+  Learning web development wasn’t easy. Resources were limited, but Lewis was determined. He spent every moment he could exploring code, experimenting, failing, and trying again. What started as a personal challenge slowly grew into a powerful mission: to preserve and share the untold legacy of the Kiziba Kingdom, his homeland’s proud and ancient heritage.
+  <br><br>
+  Today, Lewis has built something truly meaningful—a digital archive dedicated to the culture, leaders, and traditions of Kiziba. Every line of code reflects not just skill, but a sense of duty to honor those who came before. This is more than a website; it’s a living tribute to a people and their identity.
+  <br><br>
+  If his story resonates with you, and you believe in the value of preserving history through modern tools, your support—whether a kind word, a small contribution, or simply sharing this project—can go a long way. You're not just helping a developer—you’re helping keep culture alive for future generations.
+  <br><br>
+  You can reach out to Lewis via 
+  <a href="https://wa.me/255746210442" target="_blank" style="color: #25D366; text-decoration: none;">WhatsApp (+255 746 210 442)</a> or 
+  <a href="mailto:1738rumanyika@gmail.com" style="color: #4285F4; text-decoration: none;">Email (1738rumanyika@gmail.com)</a>.
+  <br><br>
+  Thank you for being part of this journey.
+</p>
+<script>
+  function toggleBio() {
+    const bio = document.getElementById('bio');
+    const btn = document.querySelector('.read-more-btn');
+    if (bio.style.display === "none") {
+      bio.style.display = "block";
+      btn.textContent = "Read Less";
+    } else {
+      bio.style.display = "none";
+      btn.textContent = "Read More";
+    }
+  }
+</script>
+
+
+</div>
+
+</div>
+
+
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Kiziba Kingdom. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
