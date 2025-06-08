@@ -110,49 +110,49 @@
     }
 
     .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-    }
+  columns: 1;
+  column-gap: 1.5rem;
+}
 
-    .gallery-item {
-      background-color: white;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      display: flex;
-      flex-direction: column;
-    }
+@media (min-width: 600px) {
+  .gallery-grid {
+    columns: 2;
+  }
+}
 
-    .gallery-item:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.1);
-    }
+@media (min-width: 900px) {
+  .gallery-grid {
+    columns: 3;
+  }
+}
 
-    .gallery-item img {
-      width: 100%;
-      height: auto;
-      aspect-ratio: 4/3;
-      object-fit: cover;
-    }
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+}
 
-    .caption {
-      padding: 1.3rem;
-      text-align: left;
-      flex-grow: 1;
-    }
+.gallery-item img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  display: block;
+}
 
-    .caption h3 {
-      font-size: 1.2rem;
-      color: #111827;
-      margin-bottom: 0.5rem;
-    }
+.caption {
+  padding-top: 0.7rem;
+}
 
-    .caption p {
-      font-size: 0.95rem;
-      color: #4b5563;
-    }
+.caption h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.caption p {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
 
     @media (max-width: 500px) {
       .hero h1 {
@@ -219,40 +219,168 @@
     <p class="subtitle">Each image below captures the essence of our cultural journey</p>
 
     <div class="gallery-grid">
+  <div class="gallery-item">
+    <img src="images/picha1.jpeg" alt="Village Elder">
+    <div class="caption"><h3>Wisdom of the Elders</h3><p>Our foundation stands on the knowledge passed down through generations.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha2.jpeg" alt="Children playing">
+    <div class="caption"><h3>Joy in Simplicity</h3><p>Children finding happiness in the heart of the village.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha3.jpeg" alt="Riverbank">
+    <div class="caption"><h3>River of Life</h3><p>The river that has quenched our thirst and nourished our crops.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha4.jpeg" alt="Drummers">
+    <div class="caption"><h3>Echoes of the Drum</h3><p>Drums tell our stories before they are written.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha5.jpeg" alt="Harvest time">
+    <div class="caption"><h3>Fruits of Our Labor</h3><p>The bounty of the land reminds us of the value of hard work.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha6.jpeg" alt="Ceremony">
+    <div class="caption"><h3>Sacred Rites</h3><p>Cultural rituals that bind us to our ancestors and the land.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha7.jpeg" alt="Blacksmith">
+    <div class="caption"><h3>Fire and Iron</h3><p>Blacksmiths shaping history one blade at a time.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha8.jpeg" alt="Mountains">
+    <div class="caption"><h3>The Watchful Peaks</h3><p>Mountains that guard our dreams and inspire our songs.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha9.jpeg" alt="Dance">
+    <div class="caption"><h3>Rhythms of the Ancestors</h3><p>Dance ceremonies continue to unite generations and tell stories of old.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha10.jpeg" alt="Cooking pot">
+    <div class="caption"><h3>Kitchen of Memories</h3><p>The scent of tradition rising from every pot.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha11.jpeg" alt="Community Market">
+    <div class="caption"><h3>Stronger Together</h3><p>Community markets empower local artisans and support sustainable growth.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha12.jpeg" alt="Protected Forest">
+    <div class="caption"><h3>Guardians of Nature</h3><p>This forest, protected for centuries, reflects our respect for the earth.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha13.jpeg" alt="Students under tree">
+    <div class="caption"><h3>Knowledge Passed On</h3><p>Students learning under the great tree—a symbol of wisdom in our culture.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha14.jpeg" alt="Traditional Weaving">
+    <div class="caption"><h3>Threads of Identity</h3><p>Every weave tells a story of patience, skill, and identity.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha15.jpeg" alt="Family Meal">
+    <div class="caption"><h3>The Shared Table</h3><p>Food unites us. Stories flow as freely as the stew on our plates.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha16.jpeg" alt="Boys Herding Goats">
+    <div class="caption"><h3>Learning Responsibility</h3><p>The youth learn by doing—nature is the classroom.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha17.jpeg" alt="Rain Clouds">
+    <div class="caption"><h3>Blessings from Above</h3><p>Rain is a prayer answered—life springing from sky to soil.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha18.jpeg" alt="Fireplace Stories">
+    <div class="caption"><h3>Under Firelight</h3><p>Our legends come alive at dusk, carried by firelight and voice.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha19.jpeg" alt="Animal Tracks">
+    <div class="caption"><h3>Signs of the Wild</h3><p>Tracking animals taught survival, observation, and intuition.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha20.jpeg" alt="Young girl smiling">
+    <div class="caption"><h3>Future Bright</h3><p>Hope shines brightest in the eyes of our children.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha21.jpeg" alt="Basket Market">
+    <div class="caption"><h3>Crafted by Hand</h3><p>Local craftsmanship speaks louder than words.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha22.jpeg" alt="Elders Gathering">
+    <div class="caption"><h3>Circle of Counsel</h3><p>Decisions are made in harmony, not haste.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha23.jpeg" alt="Girls Walking Home">
+    <div class="caption"><h3>Journey Home</h3><p>The road home is where laughter, songs, and dreams echo.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha24.jpeg" alt="Threshing Grain">
+    <div class="caption"><h3>The Grain of Survival</h3><p>Food security starts with humble hands and sacred grains.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha25.jpeg" alt="Sunrise over fields">
+    <div class="caption"><h3>Every New Day</h3><p>Sunrise reminds us of resilience, no matter the storm.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha26.jpeg" alt="Tools of Trade">
+    <div class="caption"><h3>Work and Worth</h3><p>Every tool bears the fingerprints of ambition.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha27.jpeg" alt="School Classroom">
+    <div class="caption"><h3>Books and Dreams</h3><p>Each chalk mark opens a world beyond the hills.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha28.jpeg" alt="Sunset Dance">
+    <div class="caption"><h3>Dancing with the Sun</h3><p>When the sun kisses the horizon, our feet tell stories.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha29.jpeg" alt="Elders with Staffs">
+    <div class="caption"><h3>Staffs of Wisdom</h3><p>The elder’s walking stick is a badge of respect and journey.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha30.jpeg" alt="Newborn Baby">
+    <div class="caption"><h3>New Life</h3><p>Every birth is a promise to keep our legacy alive.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha31.jpeg" alt="Animal Herds">
+    <div class="caption"><h3>Living with the Land</h3><p>Animals are not just livestock—they are lifeblood.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha32.jpeg" alt="Tree Roots">
+    <div class="caption"><h3>Deep Roots</h3><p>Just like our trees, we stand tall because we are deeply rooted.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha33.jpeg" alt="Water Well">
+    <div class="caption"><h3>Drawing from the Earth</h3><p>The well: a place of community, care, and continuity.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha34.jpeg" alt="Boys Drumming">
+    <div class="caption"><h3>Next Generation</h3><p>The rhythm continues in the hands of the youth.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha35.jpeg" alt="Quiet Morning">
+    <div class="caption"><h3>Peace Before the Day</h3><p>The early morning stillness carries the voice of ancestors.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha36.jpeg" alt="Clay Pots">
+    <div class="caption"><h3>Made by Earth</h3><p>Clay pots, shaped with care, carry both water and memory.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha37.jpeg" alt="Tree of Life">
+    <div class="caption"><h3>The Sacred Tree</h3><p>This tree has witnessed generations pass, grow, and rise again.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha38.jpeg" alt="Path Through Fields">
+    <div class="caption"><h3>Our Way Home</h3><p>The dirt path tells more stories than any paved road.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha39.jpeg" alt="Old Woman Weaving">
+    <div class="caption"><h3>Hands of Legacy</h3><p>She weaves with grace, knowing each thread outlives her.</p></div>
+  </div>
+  <div class="gallery-item">
+    <img src="images/picha40.jpeg" alt="Village at Sunset">
+    <div class="caption"><h3>Enduring Beauty</h3><p>As the sun sets, our spirit rises ever strong.</p></div>
+  </div>
+</div>
 
-      <div class="gallery-item">
-        <img src="images/picha13.jpeg" alt="Students learning under a tree">
-        <div class="caption">
-          <h3>Knowledge Passed On</h3>
-          <p>Students learning under the great tree—a symbol of wisdom in our culture.</p>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="images/picha9.jpeg" alt="Traditional Dance">
-        <div class="caption">
-          <h3>Rhythms of the Ancestors</h3>
-          <p>Dance ceremonies continue to unite generations and tell stories of old.</p>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="images/picha12.jpeg" alt="Protected Forest">
-        <div class="caption">
-          <h3>Guardians of Nature</h3>
-          <p>This forest, protected for centuries, reflects our respect for the earth.</p>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="images/picha11.jpeg" alt="Community Market">
-        <div class="caption">
-          <h3>Stronger Together</h3>
-          <p>Community markets empower local artisans and support sustainable growth.</p>
-        </div>
-      </div>
-
-    </div>
   </section>
 
   <script>
